@@ -1,0 +1,15 @@
+{
+  "_note": "Extracted from CSE_Advising_Structure_-_Summer_2026.pdf. Semesters 2, 5 and 10 were not clearly delimited in the source table (the Access Academy block bled into the Semester 2 header) — verify and correct these two arrays via the admin panel once live.",
+  "1": ["PHY101", "PHY102", "CSE113", "CSE114", "MATH107", "ENG111"],
+  "2": ["AA099", "AA150", "AA200", "CSE111", "CSE112"],
+  "3": ["EEE111", "EEE112", "CSE211", "CSE212", "MATH207", "CHEM201"],
+  "4": ["EEE213", "EEE214", "CSE123", "CSE124", "CSE115", "HUM201"],
+  "5": [],
+  "6": ["CSE215", "CSE216", "CSE221", "CSE222", "CSE225", "CSE226", "ENG112"],
+  "7": ["CSE311", "CSE312", "CSE313", "CSE315", "CSE316", "MATH205"],
+  "8": ["CSE223", "CSE224", "CSE325", "CSE326", "CSE242", "ME102", "MATH203"],
+  "9": ["CSE319", "CSE320", "CSE317", "CSE342", "MATH301", "HUM301"],
+  "10": [],
+  "11": ["CSE321", "CSE322", "CSE327", "CSE328", "CSE411", "CSE301"],
+  "12": ["CSE443", "CSE463", "CSE439", "CSE459", "CSE466", "CSE435", "CSE436", "IPD400", "HUM203", "MATH205", "CSE400"]
+}
