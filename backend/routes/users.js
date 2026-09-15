@@ -3,6 +3,7 @@ const router = express.Router();
 const admin = require('firebase-admin');
 const User = require('../models/User');
 const { requireAuth, requireRole } = require('../middleware/auth');
+const { logAction } = require('../utils/auditLog');
 
 /**
  * GET /api/users/me
@@ -49,6 +50,7 @@ router.post('/', requireAuth, requireRole('admin'), async (req, res) => {
       ...(role === 'student' ? { studentId, currentSemester: currentSemester || 1 } : {})
     });
 
+    await logAction(req.user, 'user.create', { name: user.name, email: user.email, role: user.role });
     res.status(201).json(user);
   } catch (err) {
     res.status(400).json({ error: err.message });
@@ -68,6 +70,7 @@ router.put('/:id', requireAuth, requireRole('admin'), async (req, res) => {
     { new: true, runValidators: true }
   );
   if (!user) return res.status(404).json({ error: 'User not found' });
+  await logAction(req.user, 'user.update', { targetUser: user.email, changes: req.body });
   res.json(user);
 });
 
@@ -81,6 +84,7 @@ router.delete('/:id', requireAuth, requireRole('admin'), async (req, res) => {
 
   await admin.auth().deleteUser(user.firebaseUid).catch(() => {}); // ignore if already gone
   await user.deleteOne();
+  await logAction(req.user, 'user.delete', { targetUser: user.email, role: user.role });
   res.json({ message: 'User removed' });
 });
 

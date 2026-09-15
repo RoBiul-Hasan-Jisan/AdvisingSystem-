@@ -1,7 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const multer = require('multer');
 const User = require('../models/User');
 const { requireAuth, requireRole } = require('../middleware/auth');
+const { logAction } = require('../utils/auditLog');
+
+const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 * 1024 * 1024 } });
 
 /**
  * POST /api/promotion/result
@@ -22,13 +26,15 @@ router.post('/result', requireAuth, requireRole('admin'), async (req, res) => {
     student.completedCourses.push({ courseCode: courseCode.toUpperCase(), grade, status, term });
   }
   await student.save();
+  await logAction(req.user, 'result.record', { studentEmail: student.email, courseCode, status, term });
   res.json({ message: 'Result recorded', student });
 });
 
 /**
  * POST /api/promotion/bulk
  * body: { results: [{ studentId, courseCode, grade, status, term }, ...] }
- * Bulk-load a whole semester's result sheet in one call.
+ * Bulk-load a whole semester's result sheet in one call (studentId here is
+ * the Mongo _id, as used by the admin UI's dropdown).
  */
 router.post('/bulk', requireAuth, requireRole('admin'), async (req, res) => {
   const { results } = req.body;
@@ -51,6 +57,68 @@ router.post('/bulk', requireAuth, requireRole('admin'), async (req, res) => {
       summary.errors.push({ ...r, error: err.message });
     }
   }
+  await logAction(req.user, 'result.bulk', { updated: summary.updated, errorCount: summary.errors.length });
+  res.json(summary);
+});
+
+/**
+ * POST /api/promotion/bulk-csv
+ * multipart/form-data: file=<csv>
+ * CSV columns (header row required): studentId,courseCode,grade,status,term
+ * Here studentId is the human-readable ID (User.studentId, e.g. "CSE-2201045"),
+ * not a Mongo _id - this is the sheet admin/registrar staff actually work
+ * from, not something built for the web UI.
+ */
+router.post('/bulk-csv', requireAuth, requireRole('admin'), upload.single('file'), async (req, res) => {
+  if (!req.file) return res.status(400).json({ error: 'No CSV uploaded (form field name: file)' });
+
+  const text = req.file.buffer.toString('utf8');
+  const lines = text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+  if (lines.length < 2) return res.status(400).json({ error: 'CSV has no data rows' });
+
+  const header = lines[0].split(',').map(h => h.trim().toLowerCase());
+  const required = ['studentid', 'coursecode', 'grade', 'status', 'term'];
+  const missingCols = required.filter(c => !header.includes(c));
+  if (missingCols.length > 0) {
+    return res.status(400).json({ error: `CSV is missing column(s): ${missingCols.join(', ')}. Expected header: studentId,courseCode,grade,status,term` });
+  }
+  const idx = Object.fromEntries(header.map((h, i) => [h, i]));
+
+  const summary = { updated: 0, errors: [] };
+
+  for (let i = 1; i < lines.length; i++) {
+    const cols = lines[i].split(',').map(c => c.trim());
+    const row = {
+      studentId: cols[idx.studentid],
+      courseCode: cols[idx.coursecode],
+      grade: cols[idx.grade],
+      status: cols[idx.status],
+      term: cols[idx.term]
+    };
+
+    try {
+      if (!['pass', 'fail'].includes(row.status?.toLowerCase())) {
+        throw new Error(`status must be "pass" or "fail", got "${row.status}"`);
+      }
+      const student = await User.findOne({ studentId: row.studentId, role: 'student' });
+      if (!student) throw new Error(`No student with studentId "${row.studentId}"`);
+
+      const courseCode = row.courseCode.toUpperCase();
+      const existing = student.completedCourses.find(c => c.courseCode === courseCode && c.term === row.term);
+      if (existing) {
+        existing.grade = row.grade;
+        existing.status = row.status.toLowerCase();
+      } else {
+        student.completedCourses.push({ courseCode, grade: row.grade, status: row.status.toLowerCase(), term: row.term });
+      }
+      await student.save();
+      summary.updated++;
+    } catch (err) {
+      summary.errors.push({ row: i + 1, ...row, error: err.message });
+    }
+  }
+
+  await logAction(req.user, 'result.bulk-csv', { updated: summary.updated, errorCount: summary.errors.length, fileName: req.file.originalname });
   res.json(summary);
 });
 
@@ -84,6 +152,7 @@ router.post('/promote', requireAuth, requireRole('admin'), async (req, res) => {
     }
   }
 
+  await logAction(req.user, 'promotion.run', { term, promotedCount: promoted.length, heldCount: held.length });
   res.json({ term, promotedCount: promoted.length, heldCount: held.length, promoted, held });
 });
 
