@@ -4,11 +4,12 @@ const Section = require('../models/Section');
 const { requireAuth, requireRole } = require('../middleware/auth');
 
 router.get('/', requireAuth, async (req, res) => {
-  const { semesterNumber, term, courseCode } = req.query;
+  const { semesterNumber, term, courseCode, teacher } = req.query;
   const filter = {};
   if (semesterNumber) filter.semesterNumber = Number(semesterNumber);
   if (term) filter.term = term;
   if (courseCode) filter.courseCode = courseCode.toUpperCase();
+  if (teacher === 'me' && req.user.role === 'teacher') filter.teacher = req.user._id;
   const sections = await Section.find(filter).populate('teacher', 'name email');
   res.json(sections);
 });
