@@ -4,6 +4,7 @@ const multer = require('multer');
 const User = require('../models/User');
 const { requireAuth, requireRole } = require('../middleware/auth');
 const { logAction } = require('../utils/auditLog');
+const { asyncHandler } = require('../middleware/asyncHandler');
 
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 * 1024 * 1024 } });
 
@@ -13,7 +14,7 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 5 *
  * Admin records one course result for one student. Upserts into
  * completedCourses (so re-uploading a corrected grade just overwrites it).
  */
-router.post('/result', requireAuth, requireRole('admin'), async (req, res) => {
+router.post('/result', requireAuth, requireRole('admin'), asyncHandler(async (req, res) => {
   const { studentId, courseCode, grade, status, term } = req.body;
   const student = await User.findById(studentId);
   if (!student || student.role !== 'student') return res.status(404).json({ error: 'Student not found' });
@@ -28,7 +29,7 @@ router.post('/result', requireAuth, requireRole('admin'), async (req, res) => {
   await student.save();
   await logAction(req.user, 'result.record', { studentEmail: student.email, courseCode, status, term });
   res.json({ message: 'Result recorded', student });
-});
+}));
 
 /**
  * POST /api/promotion/bulk
@@ -36,7 +37,7 @@ router.post('/result', requireAuth, requireRole('admin'), async (req, res) => {
  * Bulk-load a whole semester's result sheet in one call (studentId here is
  * the Mongo _id, as used by the admin UI's dropdown).
  */
-router.post('/bulk', requireAuth, requireRole('admin'), async (req, res) => {
+router.post('/bulk', requireAuth, requireRole('admin'), asyncHandler(async (req, res) => {
   const { results } = req.body;
   const summary = { updated: 0, errors: [] };
 
@@ -59,7 +60,7 @@ router.post('/bulk', requireAuth, requireRole('admin'), async (req, res) => {
   }
   await logAction(req.user, 'result.bulk', { updated: summary.updated, errorCount: summary.errors.length });
   res.json(summary);
-});
+}));
 
 /**
  * POST /api/promotion/bulk-csv
@@ -69,7 +70,7 @@ router.post('/bulk', requireAuth, requireRole('admin'), async (req, res) => {
  * not a Mongo _id - this is the sheet admin/registrar staff actually work
  * from, not something built for the web UI.
  */
-router.post('/bulk-csv', requireAuth, requireRole('admin'), upload.single('file'), async (req, res) => {
+router.post('/bulk-csv', requireAuth, requireRole('admin'), upload.single('file'), asyncHandler(async (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No CSV uploaded (form field name: file)' });
 
   const text = req.file.buffer.toString('utf8');
@@ -120,7 +121,7 @@ router.post('/bulk-csv', requireAuth, requireRole('admin'), upload.single('file'
 
   await logAction(req.user, 'result.bulk-csv', { updated: summary.updated, errorCount: summary.errors.length, fileName: req.file.originalname });
   res.json(summary);
-});
+}));
 
 /**
  * POST /api/promotion/promote
@@ -130,7 +131,7 @@ router.post('/bulk-csv', requireAuth, requireRole('admin'), upload.single('file'
  * retake next term, which is why extra/retake courses feed the custom-routine
  * logic in the enrollment engine).
  */
-router.post('/promote', requireAuth, requireRole('admin'), async (req, res) => {
+router.post('/promote', requireAuth, requireRole('admin'), asyncHandler(async (req, res) => {
   const { term } = req.body;
   const students = await User.find({ role: 'student' });
 
@@ -154,6 +155,6 @@ router.post('/promote', requireAuth, requireRole('admin'), async (req, res) => {
 
   await logAction(req.user, 'promotion.run', { term, promotedCount: promoted.length, heldCount: held.length });
   res.json({ term, promotedCount: promoted.length, heldCount: held.length, promoted, held });
-});
+}));
 
 module.exports = router;

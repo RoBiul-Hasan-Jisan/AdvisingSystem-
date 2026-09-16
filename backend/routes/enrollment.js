@@ -4,9 +4,11 @@ const Section = require('../models/Section');
 const Course = require('../models/Course');
 const Semester = require('../models/Semester');
 const Enrollment = require('../models/Enrollment');
+const Notification = require('../models/Notification');
 const { requireAuth, requireRole } = require('../middleware/auth');
 const { findConflict } = require('../utils/scheduleConflict');
 const { getCurrentTerm } = require('../utils/currentTerm');
+const { asyncHandler } = require('../middleware/asyncHandler');
 
 /**
  * GET /api/enrollment/routine
@@ -15,7 +17,7 @@ const { getCurrentTerm } = require('../utils/currentTerm');
  * courses / retakes) they've already picked. This is what the student sees
  * before choosing sections.
  */
-router.get('/routine', requireAuth, requireRole('student'), async (req, res) => {
+router.get('/routine', requireAuth, requireRole('student'), asyncHandler(async (req, res) => {
   const student = req.user;
   const term = await getCurrentTerm();
   if (!term) return res.status(400).json({ error: 'No term has been set up yet. Ask admin to import this term\'s advising structure.' });
@@ -42,7 +44,7 @@ router.get('/routine', requireAuth, requireRole('student'), async (req, res) => 
     availableSections: defaultSections,
     myEnrollments
   });
-});
+}));
 
 /**
  * GET /api/enrollment/catalog
@@ -53,7 +55,7 @@ router.get('/routine', requireAuth, requireRole('student'), async (req, res) => 
  * Enrolling through the same POST /enroll below automatically marks it as
  * an extra course if it's outside their default plan.
  */
-router.get('/catalog', requireAuth, requireRole('student'), async (req, res) => {
+router.get('/catalog', requireAuth, requireRole('student'), asyncHandler(async (req, res) => {
   const student = req.user;
   const term = await getCurrentTerm();
   if (!term) return res.status(400).json({ error: 'No term has been set up yet. Ask admin to import this term\'s advising structure.' });
@@ -94,7 +96,7 @@ router.get('/catalog', requireAuth, requireRole('student'), async (req, res) => 
   });
 
   res.json({ term, catalog, myEnrollments });
-});
+}));
 
 /**
  * POST /api/enrollment/enroll
@@ -103,7 +105,7 @@ router.get('/catalog', requireAuth, requireRole('student'), async (req, res) => 
  * part of the student's current default semester plan, it's flagged as an
  * extra course, which marks the student as having a custom routine.
  */
-router.post('/enroll', requireAuth, requireRole('student'), async (req, res) => {
+router.post('/enroll', requireAuth, requireRole('student'), asyncHandler(async (req, res) => {
   const student = req.user;
   const { sectionId } = req.body;
 
@@ -209,7 +211,7 @@ router.post('/enroll', requireAuth, requireRole('student'), async (req, res) => 
   }
 
   res.status(201).json({ message: 'Enrolled', enrollment, section: updatedSection });
-});
+}));
 
 /**
  * POST /api/enrollment/drop
@@ -217,7 +219,7 @@ router.post('/enroll', requireAuth, requireRole('student'), async (req, res) => 
  * Frees the seat back up. If someone's on the waitlist for this section,
  * the longest-waiting one is automatically promoted into the freed seat.
  */
-router.post('/drop', requireAuth, requireRole('student'), async (req, res) => {
+router.post('/drop', requireAuth, requireRole('student'), asyncHandler(async (req, res) => {
   const { enrollmentId } = req.body;
   const enrollment = await Enrollment.findOne({ _id: enrollmentId, student: req.user._id });
   if (!enrollment || !['enrolled', 'waitlisted'].includes(enrollment.status)) {
@@ -244,19 +246,23 @@ router.post('/drop', requireAuth, requireRole('student'), async (req, res) => {
         next.status = 'enrolled';
         await next.save();
         promoted = next;
+        await Notification.create({
+          user: next.student,
+          message: `A seat opened up in ${next.courseCode} and you've been moved off the waitlist into it.`
+        });
       }
     }
   }
 
   res.json({ message: 'Dropped', enrollment, promotedFromWaitlist: promoted });
-});
+}));
 
 /**
  * GET /api/enrollment/dashboard
  * The student's final confirmed schedule PLUS any waitlisted courses, with
  * queue position, so they know where they stand.
  */
-router.get('/dashboard', requireAuth, requireRole('student'), async (req, res) => {
+router.get('/dashboard', requireAuth, requireRole('student'), asyncHandler(async (req, res) => {
   const enrollments = await Enrollment.find({ student: req.user._id, status: { $in: ['enrolled', 'waitlisted'] } })
     .populate('section')
     .sort('enrolledAt');
@@ -270,6 +276,6 @@ router.get('/dashboard', requireAuth, requireRole('student'), async (req, res) =
   }));
 
   res.json({ hasCustomRoutine: req.user.hasCustomRoutine, enrollments: withPositions });
-});
+}));
 
 module.exports = router;

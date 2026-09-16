@@ -3,10 +3,11 @@ const router = express.Router();
 const Section = require('../models/Section');
 const { requireAuth, requireRole } = require('../middleware/auth');
 const { logAction } = require('../utils/auditLog');
+const { asyncHandler } = require('../middleware/asyncHandler');
 
 // Paginated - a full term's sections (~300+, per the real advising PDF) is too
 // much to dump in one ledger table once you're past a single small program.
-router.get('/', requireAuth, async (req, res) => {
+router.get('/', requireAuth, asyncHandler(async (req, res) => {
   const { semesterNumber, term, courseCode, teacher } = req.query;
   const page = Math.max(1, Number(req.query.page) || 1);
   const limit = Math.min(500, Number(req.query.limit) || 100);
@@ -24,21 +25,17 @@ router.get('/', requireAuth, async (req, res) => {
   ]);
 
   res.json({ sections, total, page, pages: Math.max(1, Math.ceil(total / limit)) });
-});
+}));
 
 // Admin creates a section; can also assign a teacher and capacity up front
-router.post('/', requireAuth, requireRole('admin'), async (req, res) => {
-  try {
-    const section = await Section.create(req.body);
-    await logAction(req.user, 'section.create', { courseCode: section.courseCode, sectionLabel: section.sectionLabel, term: section.term, capacity: section.capacity });
-    res.status(201).json(section);
-  } catch (err) {
-    res.status(400).json({ error: err.message });
-  }
-});
+router.post('/', requireAuth, requireRole('admin'), asyncHandler(async (req, res) => {
+  const section = await Section.create(req.body);
+  await logAction(req.user, 'section.create', { courseCode: section.courseCode, sectionLabel: section.sectionLabel, term: section.term, capacity: section.capacity });
+  res.status(201).json(section);
+}));
 
 // Admin or the assigned teacher can adjust capacity / schedule
-router.put('/:id', requireAuth, requireRole('admin', 'teacher'), async (req, res) => {
+router.put('/:id', requireAuth, requireRole('admin', 'teacher'), asyncHandler(async (req, res) => {
   const section = await Section.findById(req.params.id);
   if (!section) return res.status(404).json({ error: 'Section not found' });
 
@@ -55,9 +52,9 @@ router.put('/:id', requireAuth, requireRole('admin', 'teacher'), async (req, res
   await section.save();
   await logAction(req.user, 'section.update', { courseCode: section.courseCode, sectionLabel: section.sectionLabel, changes: req.body });
   res.json(section);
-});
+}));
 
-router.delete('/:id', requireAuth, requireRole('admin'), async (req, res) => {
+router.delete('/:id', requireAuth, requireRole('admin'), asyncHandler(async (req, res) => {
   const section = await Section.findById(req.params.id);
   if (!section) return res.status(404).json({ error: 'Section not found' });
   if (section.seatsTaken > 0) {
@@ -66,6 +63,6 @@ router.delete('/:id', requireAuth, requireRole('admin'), async (req, res) => {
   await section.deleteOne();
   await logAction(req.user, 'section.delete', { courseCode: section.courseCode, sectionLabel: section.sectionLabel });
   res.json({ message: 'Section deleted' });
-});
+}));
 
 module.exports = router;

@@ -9,4 +9,7 @@ const courseSchema = new mongoose.Schema({
   active: { type: Boolean, default: true }
 }, { timestamps: true });
 
+// every catalog list query filters on active first (GET /api/courses, catalog building)
+courseSchema.index({ active: 1, code: 1 });
+
 module.exports = mongoose.model('Course', courseSchema);

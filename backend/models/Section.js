@@ -19,6 +19,14 @@ const sectionSchema = new mongoose.Schema({
 // One label per course per semester per term
 sectionSchema.index({ courseCode: 1, sectionLabel: 1, semesterNumber: 1, term: 1 }, { unique: true });
 
+// --- Indexes added after reviewing actual query patterns ---
+// routine page: Section.find({ courseCode: {$in}, semesterNumber, term })
+sectionSchema.index({ term: 1, semesterNumber: 1 });
+// catalog page: Section.find({ term }) then grouped by courseCode in app code
+sectionSchema.index({ term: 1, courseCode: 1 });
+// teacher's "my sections" filter (?teacher=me)
+sectionSchema.index({ teacher: 1 });
+
 sectionSchema.virtual('seatsAvailable').get(function () {
   return this.capacity - this.seatsTaken;
 });

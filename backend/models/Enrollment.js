@@ -13,4 +13,13 @@ const enrollmentSchema = new mongoose.Schema({
 // a student can't double-enroll in the same section
 enrollmentSchema.index({ student: 1, section: 1 }, { unique: true });
 
+// --- Indexes added after reviewing actual query patterns in routes/enrollment.js ---
+// routine/catalog/dashboard: find a student's active picks for the current term
+enrollmentSchema.index({ student: 1, term: 1, status: 1 });
+// duplicate-course guard in POST /enroll: same student, same course, this term
+enrollmentSchema.index({ student: 1, courseCode: 1, term: 1, status: 1 });
+// waitlist queue: "who's next in line for this section" (findOne().sort('enrolledAt'))
+// and computing a student's queue position (countDocuments with enrolledAt <= X)
+enrollmentSchema.index({ section: 1, status: 1, enrolledAt: 1 });
+
 module.exports = mongoose.model('Enrollment', enrollmentSchema);

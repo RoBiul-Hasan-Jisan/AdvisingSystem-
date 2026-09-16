@@ -18,4 +18,8 @@ const userSchema = new mongoose.Schema({
   hasCustomRoutine: { type: Boolean, default: false } // true once they diverge from the default semester plan
 }, { timestamps: true });
 
+// admin's account list filters by role (and sometimes role+semester) constantly
+userSchema.index({ role: 1 });
+userSchema.index({ role: 1, currentSemester: 1 });
+
 module.exports = mongoose.model('User', userSchema);

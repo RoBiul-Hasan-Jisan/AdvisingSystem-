@@ -10,6 +10,7 @@ const { requireAuth, requireRole } = require('../middleware/auth');
 const { parseAdvisingText } = require('../utils/parseAdvisingPdf');
 const { getCurrentTerm } = require('../utils/currentTerm');
 const { logAction } = require('../utils/auditLog');
+const { asyncHandler } = require('../middleware/asyncHandler');
 
 const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 15 * 1024 * 1024 } });
 
@@ -27,7 +28,7 @@ const upload = multer({ storage: multer.memoryStorage(), limits: { fileSize: 15 
  * that one section is skipped and reported back rather than silently breaking
  * enrolled students.
  */
-router.post('/import', requireAuth, requireRole('admin'), upload.single('file'), async (req, res) => {
+router.post('/import', requireAuth, requireRole('admin'), upload.single('file'), asyncHandler(async (req, res) => {
   if (!req.file) return res.status(400).json({ error: 'No PDF uploaded (form field name: file)' });
   const { term, setAsCurrentTerm } = req.body;
   if (!term) return res.status(400).json({ error: 'term is required, e.g. "Fall 2026"' });
@@ -113,23 +114,23 @@ router.post('/import', requireAuth, requireRole('admin'), upload.single('file'),
     skippedCapacityShrink,
     warnings
   });
-});
+}));
 
 /**
  * GET /api/structure/current-term
  * Any logged-in user - which term the routine/section screens default to.
  */
-router.get('/current-term', requireAuth, async (req, res) => {
+router.get('/current-term', requireAuth, asyncHandler(async (req, res) => {
   const currentTerm = await getCurrentTerm();
   res.json({ currentTerm });
-});
+}));
 
 /**
  * PUT /api/structure/current-term  { term }
  * Admin only - manually flip which term is "active" (e.g. switch back after
  * importing next term's PDF early, before it actually starts).
  */
-router.put('/current-term', requireAuth, requireRole('admin'), async (req, res) => {
+router.put('/current-term', requireAuth, requireRole('admin'), asyncHandler(async (req, res) => {
   const config = await Config.findOneAndUpdate(
     { key: 'currentTerm' },
     { value: req.body.term },
@@ -137,6 +138,6 @@ router.put('/current-term', requireAuth, requireRole('admin'), async (req, res) 
   );
   await logAction(req.user, 'structure.set-current-term', { term: config.value });
   res.json({ currentTerm: config.value });
-});
+}));
 
 module.exports = router;
