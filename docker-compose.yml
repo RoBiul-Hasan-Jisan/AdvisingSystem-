@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  mongo:
+    image: mongo:7
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build: ./backend
+    ports:
+      - '5000:5000'
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/advising
+      - PORT=5000
+      - FRONTEND_URL=http://localhost:3000
+      - FIREBASE_SERVICE_ACCOUNT_PATH=/app/config/firebase-service-account.json
+    volumes:
+      # mount your real service account file at that path - keep it OUT of
+      # the image and out of git (see backend/.gitignore)
+      - ./backend/config/firebase-service-account.json:/app/config/firebase-service-account.json:ro
+    depends_on:
+      - mongo
+
+volumes:
+  mongo-data:
