@@ -3,6 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const rateLimit = require('./middleware/rateLimit');
+const { notFound, errorHandler } = require('./middleware/errorHandler');
 
 const app = express();
 app.use(helmet());
@@ -29,12 +30,7 @@ app.use('/api/terms', require('./routes/terms'));
 app.use('/api/admin/import', require('./routes/import'));
 app.use('/api/admin', require('./routes/admin'));
 
-app.use((req, res) => res.status(404).json({ error: 'Not found' }));
-
-// eslint-disable-next-line no-unused-vars
-app.use((err, req, res, next) => {
-  console.error(err);
-  res.status(500).json({ error: 'Internal server error' });
-});
+app.use(notFound);
+app.use(errorHandler);
 
 module.exports = app;

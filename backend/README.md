@@ -22,8 +22,9 @@ Stack: **Node/Express** (this repo) · **MongoDB** · **Firebase Auth** — fron
   term/import/request-review changes), each entry with the admin's name and a JSON detail blob
 - **Rate limiting** (in-memory sliding window) on the whole API, tighter on `/api/enrollment`
 - **Config-driven "current term"** — `GET/PUT /api/terms/current` - no page hardcodes a term string
-- **Real test suite** — 18 passing `node --test` cases covering the shared schedule-conflict
-  logic, the rate limiter, `asyncHandler`, and CSV-passed-column parsing (`npm test`)
+- **Real test suite** — 24 passing `node --test` cases covering the shared schedule-conflict
+  logic, the rate limiter, `asyncHandler`, CSV-passed-column parsing, and centralized error
+  handling (`npm test`)
 - 108-course catalog (full University Program elective list included)
 
 ## Why these design choices
@@ -70,17 +71,32 @@ Config            key, value   (currently just "currentTerm")
 ```bash
 cd backend
 npm install
-cp .env.example .env        # fill in MONGODB_URI and Firebase service account
+cp .env.example .env        # fill in MONGODB_URI and FIREBASE_SERVICE_ACCOUNT_PATH
+                             # (put your real firebase-service-account.json at that path -
+                             # it's gitignored, never commit it)
 npm run seed                # loads real course catalog + curriculum + sample sections
-npm test                    # 18 unit tests (schedule conflict, rate limit, asyncHandler, CSV parsing)
+npm run bootstrap-admin -- "Your Name" you@example.com "SomeStrongPassword1!"
+                             # creates the very first admin - a real Firebase Auth account
+                             # plus its linked Mongo user. Nothing else works without this
+                             # first, since every /api/admin/* route needs an admin token
+                             # and there's no admin yet on a fresh install.
+npm run demo-seed           # optional: creates a demo teacher + two demo students with
+                             # real Firebase logins, sets the active term, and puts one
+                             # student through a real enrollment with the other waitlisted
+                             # behind them, so there's something to see immediately -
+                             # prints the demo emails/password when it finishes
+npm test                    # 24 unit tests (schedule conflict, rate limit, asyncHandler,
+                             # CSV parsing, error handling)
 npm run dev
 ```
 
-Per student/teacher/admin: create their Firebase Auth account (frontend sign-up or Firebase
-console), then `POST /api/admin/students` to link that `firebaseUid` to a Mongo user with the
-right role. To let a teacher see their own sections via `GET /api/sections/mine`, set their
-`teacherShortCode` (via `PATCH /api/admin/students/:id`) to match the faculty code used in
-`Section.faculty` (e.g. "SAH", "JUD" — see the routine doc's faculty list).
+For any student/teacher beyond the demo accounts: create their Firebase Auth account (via
+Firebase console, since there's no self-service signup page - this is an internal advising
+tool, not a public site), then `POST /api/admin/students` to link that `firebaseUid` to a
+Mongo user with the right role. To let a teacher see their own sections via
+`GET /api/sections/mine`, set their `teacherShortCode` (via `PATCH /api/admin/students/:id`)
+to match the faculty code used in `Section.faculty` (e.g. "SAH", "JUD" — see the routine
+doc's faculty list).
 
 ## Importing a new term (every ~4 months, the recurring workflow)
 
@@ -217,7 +233,14 @@ Cherry-picked in (and adapted to fit this codebase's structure):
   set below the number of students already enrolled in it
 - **Unknown-course-code detection** on PDF import — flags codes the PDF references that
   aren't in the catalog yet, so enrollment doesn't silently 404 for them later
-- **A real test suite** — this project had zero automated tests before; now 18
+- **A real test suite** — this project had zero automated tests before; now 24
+- **Centralized error handler** — maps common Mongoose/Multer failures (bad ObjectId,
+  validation errors, duplicate-key violations, oversized file uploads) to sensible HTTP
+  status codes instead of a flat 500 for everything
+- **Bootstrap-admin and demo-seed scripts** — a fresh install had no way to create its own
+  first admin account (every admin route requires an admin token, and there's no admin yet);
+  `npm run bootstrap-admin` and `npm run demo-seed` solve that and set up a realistic demo
+  scenario (an actual enrollment plus a waitlisted student behind it) in one command each
 - **Seat-rollback on enrollment-create failure** — if the atomic seat grab succeeds but the
   Enrollment write then fails (a rare race), the seat claim is rolled back rather than left
   as a phantom taken seat

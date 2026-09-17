@@ -8,6 +8,8 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "seed": "node src/seed/seed.js",
+    "bootstrap-admin": "node src/seed/bootstrapAdmin.js",
+    "demo-seed": "node src/seed/demoSeed.js",
     "test": "node --test"
   },
   "dependencies": {
