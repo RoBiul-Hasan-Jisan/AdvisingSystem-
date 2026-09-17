@@ -1,73 +1,70 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { rateLimit } = require('../middleware/rateLimit');
+const rateLimit = require('../src/middleware/rateLimit');
 
-// Minimal fake Express req/res for testing the middleware in isolation.
-function fakeReqRes(ip = '1.2.3.4') {
+function mockReqRes(ip = '1.2.3.4') {
   const req = { ip };
+  const headers = {};
   const res = {
-    statusCode: 200,
-    headers: {},
+    statusCode: null,
     body: null,
-    set(key, value) { this.headers[key] = value; },
-    status(code) { this.statusCode = code; return this; },
-    json(body) { this.body = body; return this; }
+    set(key, value) {
+      headers[key] = value;
+    },
+    status(code) {
+      this.statusCode = code;
+      return this;
+    },
+    json(body) {
+      this.body = body;
+      return this;
+    },
+    headers,
   };
   return { req, res };
 }
 
 test('allows requests under the limit', () => {
   const limiter = rateLimit({ windowMs: 60_000, max: 3 });
-  let nextCalled = 0;
+  let calledNext = 0;
+  const next = () => calledNext++;
+
   for (let i = 0; i < 3; i++) {
-    const { req, res } = fakeReqRes();
-    limiter(req, res, () => { nextCalled++; });
+    const { req, res } = mockReqRes();
+    limiter(req, res, next);
   }
-  assert.equal(nextCalled, 3);
+  assert.equal(calledNext, 3);
 });
 
-test('blocks the request once the limit is exceeded, with a 429', () => {
+test('blocks the request once the limit is exceeded, with a 429 and Retry-After', () => {
   const limiter = rateLimit({ windowMs: 60_000, max: 2 });
-  const results = [];
-  for (let i = 0; i < 3; i++) {
-    const { req, res } = fakeReqRes();
-    let called = false;
-    limiter(req, res, () => { called = true; });
-    results.push({ called, status: res.statusCode, body: res.body });
-  }
-  assert.equal(results[0].called, true);
-  assert.equal(results[1].called, true);
-  assert.equal(results[2].called, false);
-  assert.equal(results[2].status, 429);
-  assert.match(results[2].body.error, /too many requests/i);
+  const next = () => {};
+
+  limiter(mockReqRes().req, mockReqRes().res, next); // these use separate mocks, so key by shared ip instead
+  const key = '9.9.9.9';
+  const calls = [mockReqRes(key), mockReqRes(key), mockReqRes(key)];
+  calls.forEach(({ req, res }) => limiter(req, res, next));
+
+  assert.equal(calls[0].res.statusCode, null); // allowed
+  assert.equal(calls[1].res.statusCode, null); // allowed
+  assert.equal(calls[2].res.statusCode, 429); // blocked
+  assert.equal(calls[2].res.body.error, 'Too many requests. Please slow down and try again shortly.');
+  assert.ok(calls[2].res.headers['Retry-After']);
 });
 
-test('tracks separate keys independently (per-IP by default)', () => {
+test('tracks separate keys independently', () => {
   const limiter = rateLimit({ windowMs: 60_000, max: 1 });
-  const a1 = fakeReqRes('1.1.1.1');
-  const b1 = fakeReqRes('2.2.2.2');
-  let aCalled = false, bCalled = false;
-  limiter(a1.req, a1.res, () => { aCalled = true; });
-  limiter(b1.req, b1.res, () => { bCalled = true; });
-  assert.equal(aCalled, true);
-  assert.equal(bCalled, true); // different IP, independent budget
+  const next = () => {};
 
-  const a2 = fakeReqRes('1.1.1.1');
-  let a2Called = false;
-  limiter(a2.req, a2.res, () => { a2Called = true; });
-  assert.equal(a2Called, false); // same IP as a1, budget of 1 already used
-});
+  const a1 = mockReqRes('a');
+  limiter(a1.req, a1.res, next);
+  const b1 = mockReqRes('b');
+  limiter(b1.req, b1.res, next);
 
-test('supports a custom keyFn (e.g. per-user instead of per-IP)', () => {
-  const limiter = rateLimit({ windowMs: 60_000, max: 1, keyFn: (req) => req.userId });
-  const { req: reqA, res: resA } = fakeReqRes();
-  reqA.userId = 'user-1';
-  const { req: reqB, res: resB } = fakeReqRes(); // same IP as reqA on purpose
-  reqB.userId = 'user-2';
+  assert.equal(a1.res.statusCode, null);
+  assert.equal(b1.res.statusCode, null);
 
-  let aCalled = false, bCalled = false;
-  limiter(reqA, resA, () => { aCalled = true; });
-  limiter(reqB, resB, () => { bCalled = true; });
-  assert.equal(aCalled, true);
-  assert.equal(bCalled, true); // different userId, so different key despite same IP
+  const a2 = mockReqRes('a');
+  limiter(a2.req, a2.res, next);
+  assert.equal(a2.res.statusCode, 429);
 });

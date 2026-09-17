@@ -1,0 +1,3397 @@
+{
+  "program": "CSE",
+  "term": "Summer 2026",
+  "curriculum": {
+    "1": [
+      "AA 099",
+      "AA 150",
+      "AA 200",
+      "CSE 111",
+      "CSE 112"
+    ],
+    "2": [
+      "CSE 113",
+      "CSE 114",
+      "ENG 111",
+      "MATH 107",
+      "PHY 101",
+      "PHY 102"
+    ],
+    "3": [
+      "CHEM 201",
+      "CSE 211",
+      "CSE 212",
+      "EEE 111",
+      "EEE 112",
+      "MATH 207"
+    ],
+    "4": [
+      "CSE 115",
+      "CSE 123",
+      "CSE 124",
+      "EEE 213",
+      "EEE 214",
+      "HUM 201"
+    ],
+    "5": [
+      "CSE 215",
+      "CSE 216",
+      "CSE 221",
+      "CSE 222",
+      "CSE 225",
+      "CSE 226",
+      "ENG 112"
+    ],
+    "6": [
+      "CSE 311",
+      "CSE 312",
+      "CSE 313",
+      "CSE 315",
+      "CSE 316",
+      "MATH 205"
+    ],
+    "7": [
+      "CSE 223",
+      "CSE 224",
+      "CSE 242",
+      "CSE 325",
+      "CSE 326",
+      "MATH 203",
+      "ME 102"
+    ],
+    "8": [
+      "CSE 317",
+      "CSE 319",
+      "CSE 320",
+      "CSE 342",
+      "HUM 301",
+      "MATH 301"
+    ],
+    "9": [
+      "CSE 301",
+      "CSE 321",
+      "CSE 322",
+      "CSE 327",
+      "CSE 328",
+      "CSE 411"
+    ],
+    "10": [
+      "CSE 439",
+      "CSE 443",
+      "CSE 459",
+      "CSE 463",
+      "CSE 466"
+    ],
+    "11": [
+      "CSE 435",
+      "CSE 436",
+      "IPD 400"
+    ]
+  },
+  "sections": [
+    {
+      "courseCode": "AA 099",
+      "sectionNumber": "1",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 099",
+      "sectionNumber": "10",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 099",
+      "sectionNumber": "2",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 099",
+      "sectionNumber": "3",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 099",
+      "sectionNumber": "4",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 099",
+      "sectionNumber": "5",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 099",
+      "sectionNumber": "6",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 099",
+      "sectionNumber": "7",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 099",
+      "sectionNumber": "8",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 099",
+      "sectionNumber": "9",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 150",
+      "sectionNumber": "1",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 150",
+      "sectionNumber": "10",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 150",
+      "sectionNumber": "2",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 150",
+      "sectionNumber": "3",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 150",
+      "sectionNumber": "4",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 150",
+      "sectionNumber": "5",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 150",
+      "sectionNumber": "6",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 150",
+      "sectionNumber": "7",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 150",
+      "sectionNumber": "8",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 150",
+      "sectionNumber": "9",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 200",
+      "sectionNumber": "1",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 200",
+      "sectionNumber": "10",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 200",
+      "sectionNumber": "2",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 200",
+      "sectionNumber": "3",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 200",
+      "sectionNumber": "4",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 200",
+      "sectionNumber": "5",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 200",
+      "sectionNumber": "6",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 200",
+      "sectionNumber": "7",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 200",
+      "sectionNumber": "8",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "AA 200",
+      "sectionNumber": "9",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 111",
+      "sectionNumber": "1",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 111",
+      "sectionNumber": "10",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 111",
+      "sectionNumber": "2",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 111",
+      "sectionNumber": "3",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 111",
+      "sectionNumber": "4",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 111",
+      "sectionNumber": "5",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 111",
+      "sectionNumber": "6",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 111",
+      "sectionNumber": "7",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 111",
+      "sectionNumber": "8",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 111",
+      "sectionNumber": "9",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 112",
+      "sectionNumber": "1",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 112",
+      "sectionNumber": "10",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 112",
+      "sectionNumber": "2",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 112",
+      "sectionNumber": "3",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 112",
+      "sectionNumber": "4",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 112",
+      "sectionNumber": "5",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 112",
+      "sectionNumber": "6",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 112",
+      "sectionNumber": "7",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 112",
+      "sectionNumber": "8",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 112",
+      "sectionNumber": "9",
+      "semester": 1,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 113",
+      "sectionNumber": "1",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 113",
+      "sectionNumber": "2",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 113",
+      "sectionNumber": "3",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 113",
+      "sectionNumber": "4",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 114",
+      "sectionNumber": "1",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 114",
+      "sectionNumber": "2",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 114",
+      "sectionNumber": "3",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 114",
+      "sectionNumber": "4",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 114",
+      "sectionNumber": "5",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": "Capacity summed from 4 split sub-groups: [6, 6, 6, 6]"
+    },
+    {
+      "courseCode": "ENG 111",
+      "sectionNumber": "1",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "ENG 111",
+      "sectionNumber": "2",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "ENG 111",
+      "sectionNumber": "3",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "ENG 111",
+      "sectionNumber": "4",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 107",
+      "sectionNumber": "1",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 107",
+      "sectionNumber": "2",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 107",
+      "sectionNumber": "3",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 107",
+      "sectionNumber": "4",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "PHY 101",
+      "sectionNumber": "1",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "PHY 101",
+      "sectionNumber": "2",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "PHY 101",
+      "sectionNumber": "3",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "PHY 101",
+      "sectionNumber": "4",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "PHY 102",
+      "sectionNumber": "1",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "PHY 102",
+      "sectionNumber": "2",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "PHY 102",
+      "sectionNumber": "3",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "PHY 102",
+      "sectionNumber": "4",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "PHY 102",
+      "sectionNumber": "5",
+      "semester": 2,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": "Capacity summed from 4 split sub-groups: [6, 6, 6, 6]"
+    },
+    {
+      "courseCode": "CHEM 201",
+      "sectionNumber": "1",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CHEM 201",
+      "sectionNumber": "2",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CHEM 201",
+      "sectionNumber": "3",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CHEM 201",
+      "sectionNumber": "4",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CHEM 201",
+      "sectionNumber": "5",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CHEM 201",
+      "sectionNumber": "6",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 211",
+      "sectionNumber": "1",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 211",
+      "sectionNumber": "2",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 211",
+      "sectionNumber": "3",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 211",
+      "sectionNumber": "4",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 211",
+      "sectionNumber": "5",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 211",
+      "sectionNumber": "6",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 212",
+      "sectionNumber": "1",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 212",
+      "sectionNumber": "2",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 212",
+      "sectionNumber": "3",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 212",
+      "sectionNumber": "4",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 212",
+      "sectionNumber": "5",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 212",
+      "sectionNumber": "6",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 212",
+      "sectionNumber": "7",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": "Capacity summed from 3 split sub-groups: [7, 8, 8]"
+    },
+    {
+      "courseCode": "CSE 212",
+      "sectionNumber": "8",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": "Capacity summed from 3 split sub-groups: [8, 8, 8]"
+    },
+    {
+      "courseCode": "EEE 111",
+      "sectionNumber": "1",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 111",
+      "sectionNumber": "2",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 111",
+      "sectionNumber": "3",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 111",
+      "sectionNumber": "4",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 111",
+      "sectionNumber": "5",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 111",
+      "sectionNumber": "6",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 112",
+      "sectionNumber": "1",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 112",
+      "sectionNumber": "2",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 112",
+      "sectionNumber": "3",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 112",
+      "sectionNumber": "4",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 112",
+      "sectionNumber": "5",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 112",
+      "sectionNumber": "6",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 112",
+      "sectionNumber": "7",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": "Capacity summed from 3 split sub-groups: [7, 8, 8]"
+    },
+    {
+      "courseCode": "EEE 112",
+      "sectionNumber": "8",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": "Capacity summed from 3 split sub-groups: [8, 8, 8]"
+    },
+    {
+      "courseCode": "MATH 207",
+      "sectionNumber": "1",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 207",
+      "sectionNumber": "2",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 207",
+      "sectionNumber": "3",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 207",
+      "sectionNumber": "4",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 207",
+      "sectionNumber": "5",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 207",
+      "sectionNumber": "6",
+      "semester": 3,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 115",
+      "sectionNumber": "1",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 115",
+      "sectionNumber": "2",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 115",
+      "sectionNumber": "3",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 115",
+      "sectionNumber": "4",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 115",
+      "sectionNumber": "5",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 115",
+      "sectionNumber": "6",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 115",
+      "sectionNumber": "7",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 123",
+      "sectionNumber": "1",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 123",
+      "sectionNumber": "2",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 123",
+      "sectionNumber": "3",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 123",
+      "sectionNumber": "4",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 123",
+      "sectionNumber": "5",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 123",
+      "sectionNumber": "6",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 123",
+      "sectionNumber": "7",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 124",
+      "sectionNumber": "1",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 124",
+      "sectionNumber": "2",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 124",
+      "sectionNumber": "3",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 124",
+      "sectionNumber": "4",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 124",
+      "sectionNumber": "5",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 124",
+      "sectionNumber": "6",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 124",
+      "sectionNumber": "7",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 124",
+      "sectionNumber": "8",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": "Capacity summed from 3 split sub-groups: [7, 7, 7]"
+    },
+    {
+      "courseCode": "CSE 124",
+      "sectionNumber": "9",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 28,
+      "note": "Capacity summed from 4 split sub-groups: [7, 7, 7, 7]"
+    },
+    {
+      "courseCode": "EEE 213",
+      "sectionNumber": "1",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 213",
+      "sectionNumber": "2",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 213",
+      "sectionNumber": "3",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 213",
+      "sectionNumber": "4",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 213",
+      "sectionNumber": "5",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 213",
+      "sectionNumber": "6",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 213",
+      "sectionNumber": "7",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 214",
+      "sectionNumber": "1",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 214",
+      "sectionNumber": "2",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 214",
+      "sectionNumber": "3",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 214",
+      "sectionNumber": "4",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 214",
+      "sectionNumber": "5",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 214",
+      "sectionNumber": "6",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 214",
+      "sectionNumber": "7",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "EEE 214",
+      "sectionNumber": "8",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": "Capacity summed from 3 split sub-groups: [7, 7, 7]"
+    },
+    {
+      "courseCode": "EEE 214",
+      "sectionNumber": "9",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 28,
+      "note": "Capacity summed from 4 split sub-groups: [7, 7, 7, 7]"
+    },
+    {
+      "courseCode": "HUM 201",
+      "sectionNumber": "1",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "HUM 201",
+      "sectionNumber": "2",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "HUM 201",
+      "sectionNumber": "3",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "HUM 201",
+      "sectionNumber": "4",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "HUM 201",
+      "sectionNumber": "5",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "HUM 201",
+      "sectionNumber": "6",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "HUM 201",
+      "sectionNumber": "7",
+      "semester": 4,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 32,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 215",
+      "sectionNumber": "1",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 215",
+      "sectionNumber": "2",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 215",
+      "sectionNumber": "3",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 216",
+      "sectionNumber": "1",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 18,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 216",
+      "sectionNumber": "2",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 216",
+      "sectionNumber": "3",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 216",
+      "sectionNumber": "4",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": "Capacity summed from 2 split sub-groups: [17, 7]"
+    },
+    {
+      "courseCode": "CSE 216",
+      "sectionNumber": "5",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": "Capacity summed from 2 split sub-groups: [7, 14]"
+    },
+    {
+      "courseCode": "CSE 221",
+      "sectionNumber": "1",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 221",
+      "sectionNumber": "2",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 221",
+      "sectionNumber": "3",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 222",
+      "sectionNumber": "1",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 18,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 222",
+      "sectionNumber": "2",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 222",
+      "sectionNumber": "3",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 222",
+      "sectionNumber": "4",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": "Capacity summed from 2 split sub-groups: [17, 7]"
+    },
+    {
+      "courseCode": "CSE 222",
+      "sectionNumber": "5",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": "Capacity summed from 2 split sub-groups: [7, 14]"
+    },
+    {
+      "courseCode": "CSE 225",
+      "sectionNumber": "1",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 225",
+      "sectionNumber": "2",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 225",
+      "sectionNumber": "3",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 226",
+      "sectionNumber": "1",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 18,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 226",
+      "sectionNumber": "2",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 226",
+      "sectionNumber": "3",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 226",
+      "sectionNumber": "4",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": "Capacity summed from 2 split sub-groups: [17, 7]"
+    },
+    {
+      "courseCode": "CSE 226",
+      "sectionNumber": "5",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": "Capacity summed from 2 split sub-groups: [7, 14]"
+    },
+    {
+      "courseCode": "ENG 112",
+      "sectionNumber": "1",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 18,
+      "note": ""
+    },
+    {
+      "courseCode": "ENG 112",
+      "sectionNumber": "2",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": ""
+    },
+    {
+      "courseCode": "ENG 112",
+      "sectionNumber": "3",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": ""
+    },
+    {
+      "courseCode": "ENG 112",
+      "sectionNumber": "4",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": "Capacity summed from 2 split sub-groups: [17, 7]"
+    },
+    {
+      "courseCode": "ENG 112",
+      "sectionNumber": "5",
+      "semester": 5,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": "Capacity summed from 2 split sub-groups: [7, 14]"
+    },
+    {
+      "courseCode": "CSE 311",
+      "sectionNumber": "1",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 311",
+      "sectionNumber": "2",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 311",
+      "sectionNumber": "3",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 311",
+      "sectionNumber": "4",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 312",
+      "sectionNumber": "1",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 312",
+      "sectionNumber": "2",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 312",
+      "sectionNumber": "3",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 312",
+      "sectionNumber": "4",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 312",
+      "sectionNumber": "5",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 22,
+      "note": "Capacity summed from 2 split sub-groups: [11, 11]"
+    },
+    {
+      "courseCode": "CSE 312",
+      "sectionNumber": "6",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 22,
+      "note": "Capacity summed from 2 split sub-groups: [11, 11]"
+    },
+    {
+      "courseCode": "CSE 313",
+      "sectionNumber": "1",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 313",
+      "sectionNumber": "2",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 313",
+      "sectionNumber": "3",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 313",
+      "sectionNumber": "4",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 315",
+      "sectionNumber": "1",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 315",
+      "sectionNumber": "2",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 315",
+      "sectionNumber": "3",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 315",
+      "sectionNumber": "4",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 316",
+      "sectionNumber": "1",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 20,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 316",
+      "sectionNumber": "2",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 20,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 316",
+      "sectionNumber": "3",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 20,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 316",
+      "sectionNumber": "4",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 20,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 316",
+      "sectionNumber": "5",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 15,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 316",
+      "sectionNumber": "6",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 15,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 316",
+      "sectionNumber": "7",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 20,
+      "note": "Capacity summed from 2 split sub-groups: [5, 15]"
+    },
+    {
+      "courseCode": "MATH 205",
+      "sectionNumber": "1",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 205",
+      "sectionNumber": "2",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 205",
+      "sectionNumber": "3",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 205",
+      "sectionNumber": "4",
+      "semester": 6,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 223",
+      "sectionNumber": "1",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 223",
+      "sectionNumber": "2",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 223",
+      "sectionNumber": "3",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 223",
+      "sectionNumber": "4",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 223",
+      "sectionNumber": "5",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 223",
+      "sectionNumber": "6",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 224",
+      "sectionNumber": "1",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 224",
+      "sectionNumber": "2",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 224",
+      "sectionNumber": "3",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 224",
+      "sectionNumber": "4",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 224",
+      "sectionNumber": "5",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 224",
+      "sectionNumber": "6",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 224",
+      "sectionNumber": "7",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": "Capacity summed from 3 split sub-groups: [7, 7, 7]"
+    },
+    {
+      "courseCode": "CSE 224",
+      "sectionNumber": "8",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 18,
+      "note": "Capacity summed from 3 split sub-groups: [6, 6, 6]"
+    },
+    {
+      "courseCode": "CSE 242",
+      "sectionNumber": "1",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 242",
+      "sectionNumber": "2",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 242",
+      "sectionNumber": "4",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 242",
+      "sectionNumber": "5",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 242",
+      "sectionNumber": "6",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 242",
+      "sectionNumber": "7",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": "Capacity summed from 3 split sub-groups: [7, 7, 7]"
+    },
+    {
+      "courseCode": "CSE 242",
+      "sectionNumber": "8",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 18,
+      "note": "Capacity summed from 3 split sub-groups: [6, 6, 6]"
+    },
+    {
+      "courseCode": "CSE 325",
+      "sectionNumber": "1",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 325",
+      "sectionNumber": "2",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 325",
+      "sectionNumber": "3",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 325",
+      "sectionNumber": "4",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 325",
+      "sectionNumber": "5",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 325",
+      "sectionNumber": "6",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 326",
+      "sectionNumber": "1",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 326",
+      "sectionNumber": "2",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 326",
+      "sectionNumber": "4",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 326",
+      "sectionNumber": "5",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 326",
+      "sectionNumber": "6",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 326",
+      "sectionNumber": "7",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": "Capacity summed from 3 split sub-groups: [7, 7, 7]"
+    },
+    {
+      "courseCode": "CSE 326",
+      "sectionNumber": "8",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 18,
+      "note": "Capacity summed from 3 split sub-groups: [6, 6, 6]"
+    },
+    {
+      "courseCode": "MATH 203",
+      "sectionNumber": "1",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 203",
+      "sectionNumber": "2",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 203",
+      "sectionNumber": "3",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 203",
+      "sectionNumber": "4",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 203",
+      "sectionNumber": "5",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 203",
+      "sectionNumber": "6",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "ME 102",
+      "sectionNumber": "1",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "ME 102",
+      "sectionNumber": "2",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 23,
+      "note": ""
+    },
+    {
+      "courseCode": "ME 102",
+      "sectionNumber": "4",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "ME 102",
+      "sectionNumber": "5",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "ME 102",
+      "sectionNumber": "6",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "ME 102",
+      "sectionNumber": "7",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 21,
+      "note": "Capacity summed from 3 split sub-groups: [7, 7, 7]"
+    },
+    {
+      "courseCode": "ME 102",
+      "sectionNumber": "8",
+      "semester": 7,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 18,
+      "note": "Capacity summed from 3 split sub-groups: [6, 6, 6]"
+    },
+    {
+      "courseCode": "CSE 317",
+      "sectionNumber": "1",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 317",
+      "sectionNumber": "2",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 317",
+      "sectionNumber": "3",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 317",
+      "sectionNumber": "4",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 319",
+      "sectionNumber": "1",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 319",
+      "sectionNumber": "2",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 319",
+      "sectionNumber": "3",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 319",
+      "sectionNumber": "4",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 320",
+      "sectionNumber": "1",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 320",
+      "sectionNumber": "2",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 320",
+      "sectionNumber": "3",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 320",
+      "sectionNumber": "4",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 320",
+      "sectionNumber": "5",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": "Capacity summed from 4 split sub-groups: [6, 6, 6, 6]"
+    },
+    {
+      "courseCode": "CSE 342",
+      "sectionNumber": "1",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 342",
+      "sectionNumber": "2",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 342",
+      "sectionNumber": "3",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 342",
+      "sectionNumber": "4",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "HUM 301",
+      "sectionNumber": "1",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "HUM 301",
+      "sectionNumber": "2",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "HUM 301",
+      "sectionNumber": "3",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "HUM 301",
+      "sectionNumber": "4",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 301",
+      "sectionNumber": "1",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 301",
+      "sectionNumber": "2",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 301",
+      "sectionNumber": "3",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "MATH 301",
+      "sectionNumber": "4",
+      "semester": 8,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 301",
+      "sectionNumber": "1",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 301",
+      "sectionNumber": "2",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 301",
+      "sectionNumber": "3",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 301",
+      "sectionNumber": "4",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 301",
+      "sectionNumber": "5",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 301",
+      "sectionNumber": "6",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 301",
+      "sectionNumber": "7",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 321",
+      "sectionNumber": "1",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 321",
+      "sectionNumber": "2",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 321",
+      "sectionNumber": "3",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 321",
+      "sectionNumber": "4",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 321",
+      "sectionNumber": "5",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 321",
+      "sectionNumber": "6",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 321",
+      "sectionNumber": "7",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 322",
+      "sectionNumber": "1",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 322",
+      "sectionNumber": "10",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 20,
+      "note": "Capacity summed from 2 split sub-groups: [10, 10]"
+    },
+    {
+      "courseCode": "CSE 322",
+      "sectionNumber": "2",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 322",
+      "sectionNumber": "3",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 322",
+      "sectionNumber": "4",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 322",
+      "sectionNumber": "5",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 322",
+      "sectionNumber": "6",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 322",
+      "sectionNumber": "7",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 322",
+      "sectionNumber": "8",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": "Capacity summed from 3 split sub-groups: [10, 10, 10]"
+    },
+    {
+      "courseCode": "CSE 322",
+      "sectionNumber": "9",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 20,
+      "note": "Capacity summed from 2 split sub-groups: [10, 10]"
+    },
+    {
+      "courseCode": "CSE 327",
+      "sectionNumber": "1",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 327",
+      "sectionNumber": "2",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 327",
+      "sectionNumber": "3",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 327",
+      "sectionNumber": "4",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 327",
+      "sectionNumber": "5",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 327",
+      "sectionNumber": "6",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 327",
+      "sectionNumber": "7",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 328",
+      "sectionNumber": "1",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 328",
+      "sectionNumber": "10",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 20,
+      "note": "Capacity summed from 2 split sub-groups: [10, 10]"
+    },
+    {
+      "courseCode": "CSE 328",
+      "sectionNumber": "2",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 328",
+      "sectionNumber": "3",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 328",
+      "sectionNumber": "4",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 328",
+      "sectionNumber": "5",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 328",
+      "sectionNumber": "6",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 328",
+      "sectionNumber": "7",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 328",
+      "sectionNumber": "8",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 30,
+      "note": "Capacity summed from 3 split sub-groups: [10, 10, 10]"
+    },
+    {
+      "courseCode": "CSE 328",
+      "sectionNumber": "9",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 20,
+      "note": "Capacity summed from 2 split sub-groups: [10, 10]"
+    },
+    {
+      "courseCode": "CSE 411",
+      "sectionNumber": "1",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 411",
+      "sectionNumber": "2",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 411",
+      "sectionNumber": "3",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 411",
+      "sectionNumber": "4",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 411",
+      "sectionNumber": "5",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 411",
+      "sectionNumber": "6",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 411",
+      "sectionNumber": "7",
+      "semester": 9,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 35,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 439",
+      "sectionNumber": "1",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 439",
+      "sectionNumber": "2",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 439",
+      "sectionNumber": "3",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 443",
+      "sectionNumber": "1",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 443",
+      "sectionNumber": "2",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 443",
+      "sectionNumber": "3",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 459",
+      "sectionNumber": "1",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 459",
+      "sectionNumber": "2",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 459",
+      "sectionNumber": "3",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 463",
+      "sectionNumber": "1",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 463",
+      "sectionNumber": "2",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 463",
+      "sectionNumber": "3",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 466",
+      "sectionNumber": "2",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 466",
+      "sectionNumber": "3",
+      "semester": 10,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 26,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 435",
+      "sectionNumber": "1",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 435",
+      "sectionNumber": "2",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 435",
+      "sectionNumber": "3",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 435",
+      "sectionNumber": "4",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 436",
+      "sectionNumber": "1",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 436",
+      "sectionNumber": "2",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 436",
+      "sectionNumber": "3",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 436",
+      "sectionNumber": "4",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 25,
+      "note": ""
+    },
+    {
+      "courseCode": "CSE 436",
+      "sectionNumber": "5",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 24,
+      "note": "Capacity summed from 4 split sub-groups: [6, 6, 6, 6]"
+    },
+    {
+      "courseCode": "IPD 400",
+      "sectionNumber": "1",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "IPD 400",
+      "sectionNumber": "2",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "IPD 400",
+      "sectionNumber": "3",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    },
+    {
+      "courseCode": "IPD 400",
+      "sectionNumber": "4",
+      "semester": 11,
+      "term": "Summer 2026",
+      "program": "CSE",
+      "capacity": 31,
+      "note": ""
+    }
+  ],
+  "warnings": []
+}
